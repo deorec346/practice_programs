@@ -12,6 +12,7 @@ def finalValueAfterOperations(operations) -> int:
 
     return test  # Print the final value after all operations
 
+
 """ this is optimized code
 
 # def finalValueAfterOperations(self, operations: List[str]) -> int:
@@ -27,5 +28,3 @@ def finalValueAfterOperations(operations) -> int:
 
 operations = ["X++","++X","--X","X--"]
 finalValueAfterOperations(operations)
-
-

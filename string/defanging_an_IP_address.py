@@ -1,15 +1,25 @@
-def defangIPaddr( address: str) -> str:
-
+# Define a function to defang an IP address
+def defangIPaddr(address: str) -> str:
+    # Create an empty string to store the defanged address
     new_add = ""
+
+    # Iterate through each character in the input address
     for i in address:
+        # Check if the character is a dot (".")
         if i == ".":
-            new_add = new_add +  "[.]"
+            # If it's a dot, replace it with "[.]" and add to the new address
+            new_add = new_add + "[.]"
         else:
-            new_add +=i 
+            # If it's not a dot, simply add the character to the new address
+            new_add += i
+
+    # Return the defanged IP address
     return new_add    
 
+# Example usage
 address = "1.1.1.1"
-defangIPaddr(address)
+defanged_address = defangIPaddr(address)
+print(defanged_address)
 
 
 

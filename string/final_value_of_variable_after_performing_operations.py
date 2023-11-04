@@ -28,5 +28,3 @@ def finalValueAfterOperations(operations) -> int:
 
 operations = ["X++","++X","--X","X--"]
 finalValueAfterOperations(operations)
-
-
